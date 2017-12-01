@@ -1,0 +1,192 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-style: normal;
+  font-weight: normal; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%;
+  font-family: "黑体"; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #EDEDED; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: .5rem;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  padding: 0 .1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header a {
+    color: #959595; }
+    header a img {
+      vertical-align: middle; }
+    header a i.icon {
+      font-size: .3rem; }
+
+section {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+  section .wrapp {
+    width: 100%;
+    background: #fff;
+    overflow: hidden; }
+    section .wrapp img {
+      width: 100%;
+      height: auto; }
+  section .con {
+    width: 100%;
+    height: auto;
+    padding: 0 .1rem;
+    background: #fff; }
+    section .con p {
+      width: 100%;
+      height: .25rem;
+      line-height: .25rem;
+      border-bottom: 1px dotted #ccc;
+      position: relative; }
+      section .con p a {
+        font-size: .10rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block;
+        width: 70%; }
+        section .con p a i.icon {
+          padding-right: .12rem;
+          color: #FA7979; }
+      section .con p .a2 i.icon {
+        color: skyblue; }
+      section .con p span {
+        font-size: .12rem;
+        color: #A0A6A3;
+        position: absolute;
+        right: .1rem; }
+      section .con p:nth-child(2) {
+        border-bottom: none; }
+  section .con2 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: .05rem; }
+    section .con2 h4 {
+      width: 100%;
+      height: .4rem;
+      line-height: .4rem;
+      text-align: center;
+      color: #304056;
+      border-bottom: 1px solid #ccc; }
+    section .con2 .list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: .1rem 0; }
+      section .con2 .list li {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: .15rem;
+        align-items: center; }
+        section .con2 .list li i.icon {
+          width: .4rem;
+          color: #fff;
+          height: .4rem;
+          border-radius: 50%;
+          background: #FB7C62;
+          text-align: center;
+          line-height: .4rem;
+          font-size: .18rem; }
+        section .con2 .list li span {
+          color: #304056;
+          line-height: .25rem;
+          font-size: .14rem; }
+        section .con2 .list li:nth-child(n) i.icon {
+          background: skyblue; }
+        section .con2 .list li:nth-child(2n) i.icon {
+          background: #FED12D; }
+
+.cen {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-top: .1rem; }
+  .cen h3 {
+    width: 100%;
+    height: auto;
+    padding: .1rem .15rem; }
+    .cen h3 img {
+      width: 100%;
+      height: auto;
+      display: block; }
+  .cen h5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #fff; }
+    .cen h5 .box {
+      height: auto;
+      width: 100%;
+      display: none; }
+      .cen h5 .box img {
+        height: auto;
+        width: 100%; }
+    .cen h5 p {
+      width: 100%;
+      height: .4rem;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .cen h5 p b {
+        color: #000;
+        padding-left: .1rem; }
+        .cen h5 p b em {
+          margin-right: .1rem;
+          width: .1rem;
+          height: .1rem;
+          background: #5FD2CE;
+          display: inline-block; }
+      .cen h5 p span {
+        color: #A7A7A7;
+        position: absolute;
+        right: .1rem; }
+
+/*# sourceMappingURL=style.css.map */

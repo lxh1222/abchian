@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#"> <img src="img/1.png" alt=""></a>              
+            <a href="#"><i class="icon iconfont icon-gengduo-2"></i></a>
+        </header>
+        <section>
+            <div class="swiper-container wrapp">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/t1.jpg" alt="">
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="img/t2.jpg" alt="">
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="img/t3.jpg" alt="">
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="img/t4.jpg" alt="">
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="img/t5.jpg" alt="">
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="img/t6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="con">
+                <p>               
+                     <a><i class="icon iconfont icon-tianmao1"></i>全国——必胜客代金券5折GO</a>
+                     <span>2017-11-01</span>
+                </p>
+                <p>               
+                     <a class="a2"><i class="icon iconfont icon-tongzhi"></i>关于我行企业掌银暂停服务的公告(2017/11/30)</a>
+                     <span>2017-11-29</span>
+                </p>
+            </div>
+            <div class="con2">
+                <h4>便捷服务</h4>
+                <ul class="list">
+                    <li>
+                        <i class="icon iconfont icon-tianmao1"></i>
+                        <span>掌上银行</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-29"></i>
+                        <span>行情数据</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-weixin"></i>
+                        <span>图说农行</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-reddit"></i>
+                        <span>营业机构</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-snapchat"></i>
+                        <span>在线预约</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-xinlangweibo"></i>
+                        <span>行用卡申请</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-pingfen"></i>
+                        <span>智能客服</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-shoucang1"></i>
+                        <span>网银登录</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="cen">
+               <h3><img src="img/zi.png" alt=""></h3> 
+               <div class="boxx">
+               <!-- <h5 class="h5">               
+                   <p><b><em></em>学生时代</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p> 
+                      <div class="box">
+                        <img src="img/tab1.jpg" alt="">
+                     </div>  
+                </h5> --> 
+            
+                 <!--  <h5>               
+                     <p><b><em></em>职场生涯</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>
+                       <div class="box">
+                        <img src="img/tab1.jpg" alt="">
+                     </div>  
+                </h5>
+                 <h5>  
+                     <p><b><em></em>品质家庭</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>
+                       <div class="box">
+                        <img src="img/tab1.jpg" alt="">
+                     </div>               
+                </h5>
+                 <h5>  
+                     <p><b><em></em>养老保障</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>  
+                    <div class="box">
+                        <img src="img/tab1.jpg" alt="">
+                     </div>                 
+                </h5> -->
+                </div>
+            </div> 
+        </section>
+       
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper=new Swiper('.wrapp',{
+            pagination:".swiper-pagination",
+            autoplay:2000,
+            loop:true
+        });
+        // function ajax(url){
+        //     return new Promise(function(resolve,reject){
+        //        var handler=function(){
+        //             var xhr=null;
+        //             if(xhr.readyState!==-4)return;
+        //             if(xhr.status===200){
+        //                 resolve(xhr.responseText);
+        //             }else{
+        //                 reject(new Error('error'));
+        //             }
+        //        }
+        //     })
+        //     if(window.XMLHttpRequest){
+        //         xhr=new XMLHttpRequest();
+        //     }else{
+        //         xhr=new ActiveXObject("Microsoft.XMLHTTP");
+        //     }
+        //     xhr.open('get',url,true);
+        //     xhr.send(null);
+        //     xhr.onreadystatechange=handler;
+        // }
+        // ajax("http://localhost:8080/data").then(function(data){
+        //     console.log(data);
+        // }).catch(function(error){
+        //     console.log(error);
+        // })
+             function ajax(url) {
+        return new Promise(function (resolve, reject) {
+            var xhr = null;
+            var handler = function () {
+                if (xhr.readyState !== 4) return;
+                if (xhr.status == 200) {
+                    resolve(xhr.responseText)
+                } else {
+                    reject(new Error(xhr.statusText));
+                }
+            }
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP")
+            }
+            xhr.open("GET", url, true);
+            xhr.send();
+            xhr.onreadystatechange = handler;
+        })
+    }
+    ajax("http://localhost:9999/indexHtml").then(function (result) {
+        var obj = JSON.parse(result);
+        var str = ` <h5>
+                     <p><b><em></em>${obj[0].text}</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>            </h5>
+                     <h5>
+                     <p><b><em></em>${obj[1].text}</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>            </h5> 
+                     <h5>
+                     <p><b><em></em>${obj[2].text}</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>            </h5> 
+                     <h5>
+                     <p><b><em></em>${obj[3].text}</b>
+                     <span class="ss"><i class="icon iconfont icon-angle-down"></i></span></p>            </h5>       
+             `;
+        $(".boxx").html(str)
+    }).catch(function (error) {
+        console.log(error)
+    });
+
+    </script>
+</body>
+</html>
